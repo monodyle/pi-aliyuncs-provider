@@ -1,0 +1,40 @@
+{
+  "name": "pi-aliyuncs-provider",
+  "version": "0.1.0",
+  "description": "Pi extension for Aliyun Model Studio - provides Qwen, DeepSeek, and GLM models via an Anthropic-compatible endpoint",
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "aliyun",
+    "aliyuncs",
+    "qwen",
+    "deepseek",
+    "glm",
+    "llm-provider"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/monodyle/pi-aliyuncs-provider"
+  },
+  "pi": {
+    "extensions": [
+      "./extensions/aliyuncs/index.ts"
+    ]
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "extensions",
+    "README.md",
+    "LICENSE"
+  ],
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-coding-agent": "0.79.6"
+  }
+}
