@@ -26,17 +26,25 @@ Select a model from the model picker (`/model`) or set one as default in setting
 
 ## Model Details
 
-| Model ID | Display Name | Reasoning | Context Window | Max Output | Pricing (USD / 1M tokens) |
-|----------|---------------|-----------|-----------------|------------|---------------------------|
-| `qwen3.8-max` | Qwen3.8 Max | Yes | 1,000,000 | 32,000 | In $2 / Out $6 / Cache write $2.5 / Cache read $0.17 |
-| `qwen3.8-max-preview` | Qwen3.8 Max Preview | Yes | 1,000,000 | 32,000 | - |
+| Model ID | Display Name | Vision | Context Window | Max Output | Pricing (USD / 1M tokens) |
+|----------|---------------|--------|-----------------|------------|---------------------------|
+| `auto` | Qwen Auto | No | 1,000,000 | 64,000 | - |
+| `qwen4-max-preview` | Qwen4 Max Preview | Yes | 1,000,000 | 393,216 * | - |
+| `qwen3.8-max` | Qwen3.8 Max | Yes | 1,000,000 | 128,000 | In $2 / Out $6 / Cache write $2.5 / Cache read $0.17 |
+| `qwen3.8-flash` | Qwen3.8 Flash | Yes | 1,000,000 | 128,000 | - |
+| `qwen3.7-max` | Qwen3.7 Max | No | 1,000,000 | 64,000 | - |
 | `qwen3.7-plus` | Qwen3.7 Plus | Yes | 1,000,000 | 64,000 | - |
-| `qwen3.7-max` | Qwen3.7 Max | Yes | 1,000,000 | 64,000 | - |
-| `deepseek-v4-flash-0731` | DeepSeek V4 Flash 0731 | Yes | 1,000,000 | 384,000 * | In $0.2 / Out $0.4 / Cache read $0.04 |
-| `deepseek-v4-pro` | DeepSeek V4 Pro | Yes | 1,000,000 | 384,000 * | - |
-| `glm-5.2` | GLM 5.2 | Yes | 128,000 | 32,000 | - |
+| `qwen3.6-flash` | Qwen3.6 Flash | Yes | 1,000,000 | 64,000 | - |
+| `glm-5.3` | GLM 5.3 | No | 1,000,000 | 32,000 | - |
+| `glm-5.2` | GLM 5.2 | No | 1,000,000 | 32,000 | - |
+| `deepseek-v4-pro` | DeepSeek V4 Pro | No | 1,000,000 | 384,000 * | - |
+| `deepseek-v4-pro-0813` | DeepSeek V4 Pro 0813 | No | 1,000,000 | 384,000 * | - |
+| `deepseek-v4-flash-0731` | DeepSeek V4 Flash 0731 | No | 1,000,000 | 384,000 * | In $0.2 / Out $0.4 / Cache read $0.04 |
+| `deepseek-v4.1-flash` | DeepSeek V4.1 Flash | Yes | 1,000,000 | 384,000 * | - |
+| `deepseek-v4.1-flash-1017` | DeepSeek V4.1 Flash 1017 | Yes | 1,000,000 | 384,000 * | - |
 
-\* DeepSeek V4 models share a 384k total budget across output and thinking.
+All models support reasoning.
+\* `qwen4-max-preview` and DeepSeek V4 models share the max output budget across output and thinking.
 
 | Attribute | Value |
 |-----------|-------|
