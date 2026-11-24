@@ -29,6 +29,7 @@ Select a model from the model picker (`/model`) or set one as default in setting
 | Model ID | Display Name | Vision | Context Window | Max Output | Pricing (USD / 1M tokens) |
 |----------|---------------|--------|-----------------|------------|---------------------------|
 | `auto` | Qwen Auto | No | 1,000,000 | 64,000 | - |
+| `qwen4-max` | Qwen4 Max | Yes | 1,000,000 | 262,144 * | - |
 | `qwen4-max-preview` | Qwen4 Max Preview | Yes | 1,000,000 | 393,216 * | - |
 | `qwen3.8-max` | Qwen3.8 Max | Yes | 1,000,000 | 128,000 | In $2 / Out $6 / Cache write $2.5 / Cache read $0.17 |
 | `qwen3.8-flash` | Qwen3.8 Flash | Yes | 1,000,000 | 128,000 | - |
@@ -44,7 +45,7 @@ Select a model from the model picker (`/model`) or set one as default in setting
 | `deepseek-v4.1-flash-1017` | DeepSeek V4.1 Flash 1017 | Yes | 1,000,000 | 384,000 * | - |
 
 All models support reasoning.
-\* `qwen4-max-preview` and DeepSeek V4 models share the max output budget across output and thinking.
+\* `qwen4-max`, `qwen4-max-preview` and DeepSeek V4 models share the max output budget across output and thinking.
 
 | Attribute | Value |
 |-----------|-------|

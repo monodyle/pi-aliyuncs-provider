@@ -26,6 +26,20 @@ export default function (pi: ExtensionAPI) {
         maxTokens: 64_000,
       },
       {
+        id: "qwen4-max",
+        name: "Qwen4 Max",
+        reasoning: true,
+        input: ["text", "image"],
+        cost: {
+          input: 0,
+          output: 0,
+          cacheRead: 0,
+          cacheWrite: 0,
+        },
+        contextWindow: 1_000_000,
+        maxTokens: 262_144,
+      },
+      {
         id: "qwen4-max-preview",
         name: "Qwen4 Max Preview",
         reasoning: true,
